@@ -15,3 +15,182 @@ R12 included_in register
 R13 included_in register
 R14 included_in register
 R15 included_in register
+
+//
+RAX contains data.
+EAX is a 32-bit register.
+RIP points to the next instruction.
+AL is the lower byte of AX.
+XMM registers hold SIMD values.
+EBX is a general-purpose register.
+RDI is used for the first argument in x86-64.
+RSP points to the stack top.
+MOV instruction transfers data.
+JMP alters program flow.
+CF is the carry flag.
+SF indicates sign in the result.
+OF indicates overflow in arithmetic.
+AX is the accumulator register.
+PUSH decrements the stack pointer.
+POP increments the stack pointer.
+CMP compares two values.
+TEST performs a bitwise AND.
+NOP does nothing.
+INT triggers an interrupt.
+LEA loads effective address.
+MOVZX zero-extends the value.
+MOVSX sign-extends the value.
+DEC decrements a register.
+INC increments a register.
+CALL pushes return address onto the stack.
+RET pops the return address.
+XCHG swaps two operands.
+AND performs bitwise AND.
+OR performs bitwise OR.
+XOR performs bitwise XOR.
+SHL shifts bits left (logical).
+SAR shifts bits right (arithmetic).
+SAL shifts bits left (logical).
+SAR shifts bits right (signed).
+ROL rotates bits left.
+ROR rotates bits right.
+BSF finds the first set bit.
+BSR finds the first clear bit.
+CLD clears the direction flag.
+STD sets the direction flag.
+CMPS compares two strings.
+SCAS scans a string for a value.
+REP repeats string operations.
+IDIV divides signed integers.
+DIV divides unsigned integers.
+PUSHF pushes flags onto the stack.
+POPF pops flags from the stack.
+CLC clears the carry flag.
+STC sets the carry flag.
+NOP has no effect on registers.
+HLT halts the processor.
+INP reads data from I/O port.
+OUT writes data to I/O port.
+MOV transfers data between registers.
+RET pops the return address from the stack.
+CLC clears the carry flag.
+STC sets the carry flag.
+CMOV conditional move based on flags.
+FPU uses ST(0) for the top stack value.
+FSTP stores and pops the FPU stack.
+FILD loads integer into FPU stack.
+FADD adds floating-point values.
+FSUB subtracts floating-point values.
+FIMUL multiplies integers in FPU.
+FCOM compares floating-point values.
+FWAIT waits for FPU operation to complete.
+MOVAPS moves aligned packed single-precision values.
+MOVSS moves scalar single-precision values.
+CMPXCHG compares and exchanges values.
+LOCK ensures atomic operations on memory.
+WAIT waits for an interrupt signal.
+MONITOR sets up a memory lock range.
+MWAIT waits for an event in a memory range.
+BSWAP swaps byte order of a register.
+PREFETCH hints to load data into cache.
+F2XM1 computes 2^X - 1.
+SQRTSD computes square root of double-precision.
+MOVAPD moves aligned packed double-precision values.
+CVTSI2SD converts signed integer to double.
+LDS loads pointer to stack.
+LES loads pointer to extra segment.
+POPAD pops all general-purpose registers.
+PUSHAD pushes all general-purpose registers.
+XLAT translates a byte using a table.
+REPE repeats the next instruction while zero flag is set.
+REPNE repeats the next instruction while zero flag is clear.
+INVD invalidates the processor's cache.
+WBINVD writes-back and invalidates the cache.
+LDMXCSR loads control status register for SIMD.
+STMXCSR stores control status register for SIMD.
+VZEROUPPER clears upper parts of XMM registers.
+VMULPS multiplies packed single-precision values.
+VADDPS adds packed single-precision values.
+VFMADDPS performs fused multiply-add on SIMD values.
+VCVTPD2PS converts packed double-precision to single-precision.
+SYSCALL triggers a system call in 64-bit mode.
+SYSEXIT returns from a system call in 64-bit mode.
+IOPL indicates privilege level for I/O operations.
+PUSHF pushes EFLAGS register onto the stack.
+REP repeats string operation until count is zero.
+LOOP decrements ECX and jumps if non-zero.
+LZCNT counts leading zeros in a register.
+TZCNT counts trailing zeros in a register.
+BSF finds the first set bit (from low bit).
+BSR finds the first set bit (from high bit).
+FISUB subtracts integer from FPU register.
+FMUL multiplies two FPU values.
+FLD loads FPU register from memory.
+FST stores FPU register to memory.
+FSAVE saves FPU state to memory.
+FRSTOR restores FPU state from memory.
+FCOMI compares FPU register with memory.
+FTST compares FPU register to zero.
+MOVBE moves data with byte reversal.
+F2F80 converts floating-point to BCD format.
+CMPPS compares packed single-precision values.
+CVTPD2DQ converts packed double-precision to packed integers.
+CWD extends AX into DX
+for signed divide.
+CDQ extends EAX into EDX
+for signed divide.
+MOVD moves a doubleword between XMM register and GPR.
+MOVQ moves quadword between XMM register and GPR.
+PUSHFQ pushes RFLAGS onto the stack (x86-64).
+POPFQ pops RFLAGS from the stack (x86-64).
+FISTTP converts integer to FPU register and truncates.
+FADDPS adds packed single-precision floating points.
+FSUBPS subtracts packed single-precision floating points.
+SQRTPS computes square root of packed single-precision values.
+SHLD shifts bits left with carry.
+SHRD shifts bits right with carry.
+ROL rotates bits left through carry.
+ROR rotates bits right through carry.
+PINSRB inserts byte into XMM register.
+PMULHRSW multiplies packed signed integers and rounds.
+VZEROALL zeros all XMM and YMM registers.
+VEXTRACTF128 extracts 128 bits from a YMM register.
+VCMPPS compares packed single-precision values with a mask.
+VCVTTPS2DQ converts packed single-precision to integers, truncating.
+LDMXCSR loads the control/status register for SIMD.
+STMXCSR stores the control/status register for SIMD.
+MOVNTDQA loads aligned data into an XMM register without polluting the cache.
+LZCNT counts leading zeros in a register (x86-64).
+SAR shifts bits right, preserving sign (arithmetic).
+ADDPS adds packed single-precision floating-point values.
+MULPS multiplies packed single-precision floating-point values.
+FLDL2T loads log base 2 of 10 into the FPU.
+FYL2X computes the base-2 logarithm of a number.
+PUSHF pushes the EFLAGS register onto the stack.
+POPF pops the EFLAGS register from the stack.
+IDIV divides signed integers (dividend in AX, EAX).
+DIV divides unsigned integers (dividend in AX, EAX).
+FMULP multiplies two FPU values and pops the stack.
+MULX multiplies two values and writes result to registers.
+SSE enables SIMD operations on 128-bit data.
+MOVUPD moves unaligned double-precision floating-point values.
+VPMADDWD multiplies packed integers and adds results.
+PADDQ adds packed quadword integers.
+PMOVMSKB moves mask of most significant bits to a register.
+PACKSSWB packs signed word integers into bytes.
+PACKUSWB packs unsigned word integers into bytes.
+CMPXCHG8B compares and exchanges 64-bit values.
+MOVDQU moves unaligned packed data.
+TESTANDSET sets the destination operand and returns its old value.
+FXCH exchanges FPU registers.
+FILD loads integer to FPU from memory.
+FIADD adds integer to FPU stack.
+VCMPEQSS compares scalar single-precision for equality.
+VCMPNEQSS compares scalar single-precision for inequality.
+VCMPGTSS compares scalar single-precision for greater than.
+MOVDQU moves unaligned data into an XMM register.
+VPMAXSD finds the maximum value in packed signed integers.
+VPMINSB finds the minimum value in packed signed byte integers.
+PINSRW inserts a word into an XMM register.
+VFMADDSUBPS performs fused multiply-add and subtract on packed single-precision.
+VBLENDVPS blends packed single-precision based on a mask.
