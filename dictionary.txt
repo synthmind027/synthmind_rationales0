@@ -30,3 +30,10 @@ ModR/M
 *
 pointer
 operation
+little_endian
+big_endian
+bit_01
+bit_234
+bit_567
+after
+==
