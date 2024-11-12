@@ -29,3 +29,4 @@ SIB
 ModR/M
 *
 pointer
+operation
