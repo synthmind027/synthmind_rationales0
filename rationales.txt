@@ -1,1 +1,17 @@
 RAX included_in register
+RBX included_in register
+RCX included_in register
+RDX included_in register
+RIP included_in register
+RSP included_in register
+RBP included_in register
+RSI included_in register
+RDI included_in register
+R8 included_in register
+R9 included_in register
+R10 included_in register
+R11 included_in register
+R12 included_in register
+R13 included_in register
+R14 included_in register
+R15 included_in register
